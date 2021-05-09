@@ -1,0 +1,10 @@
+uploads/
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.egg-info/
+.installed.cfg
+*.egg
+
+db.sqlite3
