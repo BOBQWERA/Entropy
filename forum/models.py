@@ -17,6 +17,7 @@ class Posting(models.Model):
     update_time = models.DateTimeField(auto_now=True)
     floor = models.IntegerField(default=1)
     section = models.ForeignKey('Section',on_delete=models.CASCADE)
+    available = models.BooleanField(default=True)
     class Meta:
         ordering = ['-pub_time']
 
@@ -30,6 +31,7 @@ class Comment(models.Model):
     content = models.TextField()
     floor = models.IntegerField()
     append_file = models.FileField(upload_to='uploads/',null=True)
+    available = models.BooleanField(default=True)
     
 
 

@@ -19,7 +19,7 @@ class BlogsView(APIView):
         data = request.data
         user_id = data.get('user_id')
         user = get_object_or_404(UserProfile,id=user_id)
-        blogs = Blog.objects.filter(author=user)
+        blogs = Blog.objects.filter(author=user,share=True)
         serializer = BlogSerializer(blogs,many=True)
         return Response(serializer.data)
 

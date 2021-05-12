@@ -11,3 +11,4 @@ class Blog(models.Model):
     likes = models.IntegerField(default=0)
     share = models.BooleanField(default=True)
     abstract = models.CharField(max_length=100,default="暂无简介，进来看看吧")
+    available = models.BooleanField(default=True)

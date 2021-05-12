@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'forum.apps.ForumConfig',
     'tools.apps.ToolsConfig',
+    'report.apps.ReportConfig',
 ]
 
 CORS_ALLOW_HEADERS = [

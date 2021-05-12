@@ -22,5 +22,6 @@ urlpatterns = [
     path('api/blog/',include('blog.urls')),
     path('api/forum/',include('forum.urls')),
     path('api/tools/',include('tools.urls')),
+    path('api/report/',include('report.urls')),
     path('admin/', admin.site.urls),
 ]
